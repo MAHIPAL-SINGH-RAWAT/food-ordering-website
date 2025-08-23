@@ -4,7 +4,7 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer id='about' className="footer">
       <div className="container">
         <div className="footer-content">
           {/* Brand */}
@@ -32,7 +32,7 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h4 className="section-title">Contact Us</h4>
+            <h4 id='contact' className="section-title">Contact Us</h4>
             <div className="contact-list">
               <div className="contact-item">
                 <Phone size={16} />

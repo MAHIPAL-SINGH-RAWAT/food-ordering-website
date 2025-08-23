@@ -39,8 +39,8 @@ const Header = ({ cartItems, toggleCart }) => {
               { name: 'Home', id: 'home' },
               { name: 'Featured', id: 'featured' },
               { name: 'Menu', id: 'menu' },
-              { name: 'About', id: 'footer' },
-              { name: 'Contact', id: 'footer' }
+              { name: 'About', id: 'about' },
+              { name: 'Contact', id: 'contact' }
             ].map((item) => (
               <motion.button
                 key={item.name}
