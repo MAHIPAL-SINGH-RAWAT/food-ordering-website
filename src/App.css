@@ -1,0 +1,193 @@
+.app {
+  min-height: 100vh;
+  background: white;
+}
+
+.floating-pizza {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.floating-burger {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.floating-emoji {
+  font-size: 3rem;
+}
+
+/* Smooth scrolling for the entire app */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--primary-orange);
+  outline-offset: 2px;
+}
+
+/* Loading animation utilities */
+@keyframes fadeInUp {
+  from { 
+    opacity: 0; 
+    transform: translateY(30px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Custom shadows with orange tint */
+.shadow-orange {
+  box-shadow: 0 8px 25px -5px rgba(255, 107, 53, 0.2), 0 4px 10px -2px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-orange-lg {
+  box-shadow: 0 20px 40px -10px rgba(255, 107, 53, 0.3), 0 8px 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced Button Styles with shimmer effect */
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn-shimmer:hover::before {
+  left: 100%;
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary-orange) 0%, var(--secondary-red) 50%, #9C27B0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass morphism effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Hover glow effect */
+.glow-hover {
+  transition: var(--transition);
+}
+
+.glow-hover:hover {
+  box-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
+}
+
+/* Image hover zoom effect */
+.img-zoom {
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.img-zoom:hover {
+  transform: scale(1.05);
+}
+
+/* Card hover lift effect */
+.card-lift {
+  transition: var(--transition);
+}
+
+.card-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-heavy);
+}
+
+/* Skeleton loading animation */
+.skeleton {
+  animation: skeleton-pulse 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes skeleton-pulse {
+  0% {
+    background-color: #e5e7eb;
+  }
+  100% {
+    background-color: #f3f4f6;
+  }
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .floating-pizza,
+  .floating-burger {
+    bottom: 80px;
+  }
+  
+  .floating-emoji {
+    font-size: 2rem;
+  }
+}
+
+/* Animation delays for staggered effects */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+
+/* Scroll reveal animations */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Enhanced focus states */
+.focus-ring:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.3);
+}
+
+/* Pulse animation for important elements */
+.pulse-orange {
+  animation: pulse-orange 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse-orange {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .7;
+  }
+}
