@@ -62,8 +62,7 @@ const Footer = () => {
               <div className="hours-item">
                 <Clock size={16} />
                 <div>
-                  <p>Mon - Fri: 9:00 AM - 11:00 PM</p>
-                  <p>Sat - Sun: 10:00 AM - 12:00 AM</p>
+                  <p>24x7</p>
                 </div>
               </div>
             </div>
