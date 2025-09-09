@@ -17,7 +17,7 @@ const Footer = () => {
           >
             <div id='footer' className="footer-brand">
               <div className="footer-logo">🍕</div>
-              <h3 className="brand-name">FoodieExpress</h3>
+              <h3 className="brand-name">Foodie Express 24x7</h3>
             </div>
             <p className="brand-description">
               Delivering delicious food to your doorstep since 2024. Fresh ingredients, fast delivery, and exceptional taste.
@@ -100,7 +100,7 @@ const Footer = () => {
           viewport={{ once: true }}
         >
           <p className="copyright">
-            © 2025 FoodieExpress. All rights reserved. Made with ❤️ for food lovers.
+            © 2025 Foodie Express 24x7. All rights reserved. Made with ❤️ for food lovers.
           </p>
         </motion.div>
       </div>

@@ -30,7 +30,7 @@ const Header = ({ cartItems, toggleCart }) => {
             whileHover={{ scale: 1.05 }}
           >
             <div className="logo-icon">🍕</div>
-            <h1 className="logo-text">FoodieExpress</h1>
+            <h1 className="logo-text">Foodie Express 24x7</h1>
           </motion.div>
 
           {/* Desktop Navigation */}
